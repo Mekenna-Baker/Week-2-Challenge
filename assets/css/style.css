@@ -172,7 +172,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
 .flex-item:first-child {
   min-height: 400px;
   flex-basis: 100%;
@@ -219,11 +218,50 @@ main {
   color: var(--secondary);
 }
 
-/* portfolio project images */
-/* TODO: Add portfolio project images here*/
+.project1 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1683134474181-8b88c82b6aa8?q=80&w=2077&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
 
-/* media queries */
+.project2 {
+  background-image: url(https://pbs.twimg.com/media/GHrwFAZWIAAebLm.png);
+  background-size: cover;
+  background-position: 25% 50%;
+}
 
-/* TODO: add media query for a max-width of 980px */
+.project3 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcK5AfO94yuJWROb4W3YzUernwf7dAuLbVKg&s);
+  background-size: cover;
+  background-position: center;
+}
 
-/* TODO: add media query for a max-width of 768px */
+.project4 {
+  background-image: url(https://pngimg.com/d/number4_PNG15019.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.project5 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDnnS-hpD-d7TUHBFYl_nf5l_49A-bnPPC2Q&s);
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flex-item {
+    flex-basis: 100%;
+    min-height: 150px;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+}
